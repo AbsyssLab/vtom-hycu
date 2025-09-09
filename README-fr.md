@@ -1,6 +1,6 @@
 # Intégration HYCU avec Visual TOM
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE.md)&nbsp;
-[![fr](https://img.shields.io/badge/lang-fr-red.svg)](README-fr.md)  
+[![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](README-fr.md)  
 Ce projet permet l'intégration de HYCU Backup avec le planificateur Visual TOM.
 
 La solution fournit un script Python qui peut déclencher et surveiller les sauvegardes HYCU via l'API HYCU, avec des capacités de surveillance et de rapport complètes.
