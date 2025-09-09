@@ -1,0 +1,14 @@
+{
+  "name": "Example Production Backup",
+  "type": "full",
+  "retention": "30 days",
+  "compression": true,
+  "encryption": true,
+  "schedule": "daily",
+  "target": "production-database",
+  "priority": "high",
+  "notifications": {
+    "email": "admin@example.com",
+    "webhook": "https://webhook.example.com/backup-status"
+  }
+} 

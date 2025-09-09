@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Domain name="PRO-DEV" stamp="VTEXPORT : 7.2.1d FR NT64 2024/11/25 Visual Tom (c) Absyss" version="7.2.1d" generationDate="Thu Jul 25 18:00:00 2025">
+  <Queues>
+    <Queue name="queue_hycu" comment=""/>
+  </Queues>
+
+  <JobApplicationServers>
+    <JobApplicationServer id="" name="HYCU" comment="Integration HYCU Backup Script" type="GENERIC">
+      <Properties>
+        <Property key="VTCUSTOM_DEFAULT_QUEUE" value="queue_hycu"/>
+        <Property key="VTCUSTOM_DEFAULT_SCRIPT" value=""/>
+        <Property key="VTCUSTOM_FIELDS.0.NAME" value="backup-name"/>
+        <Property key="VTCUSTOM_FIELDS.0.COMMENT" value="Name of the backup to trigger"/>
+        <Property key="VTCUSTOM_FIELDS.0.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.0.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.1.NAME" value="url"/>
+        <Property key="VTCUSTOM_FIELDS.1.COMMENT" value="HYCU API base URL"/>
+        <Property key="VTCUSTOM_FIELDS.1.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.1.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.2.NAME" value="auth-token"/>
+        <Property key="VTCUSTOM_FIELDS.2.COMMENT" value="Authentication token"/>
+        <Property key="VTCUSTOM_FIELDS.2.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.2.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.3.NAME" value="auth-file"/>
+        <Property key="VTCUSTOM_FIELDS.3.COMMENT" value="Path to authentication file"/>
+        <Property key="VTCUSTOM_FIELDS.3.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.3.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.4.NAME" value="check-interval"/>
+        <Property key="VTCUSTOM_FIELDS.4.COMMENT" value="Interval between status checks (seconds)"/>
+		<Property key="VTCUSTOM_FIELDS.4.DEFAULT_VALUE" value="30" />
+        <Property key="VTCUSTOM_FIELDS.4.TYPE" value="numeric"/>
+        <Property key="VTCUSTOM_FIELDS.4.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.5.NAME" value="timeout"/>
+        <Property key="VTCUSTOM_FIELDS.5.COMMENT" value="Max monitoring time (seconds)"/>
+		<Property key="VTCUSTOM_FIELDS.5.DEFAULT_VALUE" value="3600" />
+        <Property key="VTCUSTOM_FIELDS.5.TYPE" value="numeric"/>
+        <Property key="VTCUSTOM_FIELDS.5.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.6.NAME" value="backup-config"/>
+        <Property key="VTCUSTOM_FIELDS.6.COMMENT" value="Path to backup config JSON"/>
+        <Property key="VTCUSTOM_FIELDS.6.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.6.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.7.NAME" value="no-monitor"/>
+        <Property key="VTCUSTOM_FIELDS.7.COMMENT" value="Trigger without monitoring"/>
+        <Property key="VTCUSTOM_FIELDS.7.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.7.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS.8.NAME" value="verbose"/>
+        <Property key="VTCUSTOM_FIELDS.8.COMMENT" value="Enable verbose logging"/>
+        <Property key="VTCUSTOM_FIELDS.8.TYPE" value="character"/>
+        <Property key="VTCUSTOM_FIELDS.8.VISIBLE" value="true"/>
+
+        <Property key="VTCUSTOM_FIELDS_COUNT" value="9"/>
+      </Properties>
+    </JobApplicationServer>
+  </JobApplicationServers>
+</Domain>

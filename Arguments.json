@@ -1,0 +1,65 @@
+[
+    {
+      "name": "backup-name",
+      "description": "Name of the backup to trigger",
+      "type": "string",
+      "key": "--backup-name",
+      "required": true
+    },
+    {
+      "name": "url",
+      "description": "HYCU API base URL (can also be set via HYCU_URL environment variable)",
+      "type": "string",
+      "key": "--url",
+      "required": false
+    },
+    {
+      "name": "auth-token",
+      "description": "Authentication token (can also be set via HYCU_AUTH_TOKEN environment variable)",
+      "type": "string",
+      "key": "--auth-token",
+      "required": false
+    },
+    {
+      "name": "auth-file",
+      "description": "Path to authentication file containing credentials (can also be set via HYCU_AUTH_FILE environment variable)",
+      "type": "string",
+      "key": "--auth-file",
+      "required": false
+    },
+    {
+      "name": "check-interval",
+      "description": "Interval between status checks in seconds (default: 30)",
+      "type": "integer",
+      "key": "--check-interval",
+      "required": false
+    },
+    {
+      "name": "timeout",
+      "description": "Maximum monitoring time in seconds (default: 3600)",
+      "type": "integer",
+      "key": "--timeout",
+      "required": false
+    },
+    {
+      "name": "backup-config",
+      "description": "Path to JSON file containing backup configuration",
+      "type": "string",
+      "key": "--backup-config",
+      "required": false
+    },
+    {
+      "name": "no-monitor",
+      "description": "Trigger backup without monitoring execution",
+      "type": "flag",
+      "key": "--no-monitor",
+      "required": false
+    },
+    {
+      "name": "verbose",
+      "description": "Enable verbose logging",
+      "type": "flag",
+      "key": "--verbose",
+      "required": false
+    }
+  ]
