@@ -1,9 +1,9 @@
 @echo OFF
 
-rem Force l'utilisation West European Latin
+rem Force the use of West European Latin
 chcp 1252 > nul
 
-rem Inclut le repertoire binaire powershell dans le path
+rem Include the PowerShell binary directory in the PATH
 set PATH_PYTHON=C:\Users\Jdoe\AppData\Local\Programs\Python\Python311\
 set PATH=%PATH_PYTHON%;%PATH%
 
@@ -14,7 +14,7 @@ date /T
 echo %time:~+0,8%
 echo _______________________________________________________________________
 
-rem Mode TEST
+rem TEST Mode
 if "%TOM_JOB_EXEC%" == "TEST" (
 	echo Job execute en mode TEST
 	%ABM_BIN%\tsend -sT -r0 -m"Traitement termine (mode TEST)"
