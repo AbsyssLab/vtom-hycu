@@ -58,6 +58,7 @@
         <Property key="VTCUSTOM_FIELDS.8.VISIBLE" value="true"/>
 
         <Property key="VTCUSTOM_FIELDS_COUNT" value="9"/>
+		<Property key="VTCUSTOM_ICON_NAME" value="@HYCU"/>
       </Properties>
     </JobApplicationServer>
   </JobApplicationServers>
